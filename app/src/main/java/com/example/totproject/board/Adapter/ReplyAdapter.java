@@ -33,7 +33,7 @@ public class ReplyAdapter extends RecyclerView.Adapter<ReplyAdapter.Viewholder> 
     LayoutInflater inflater;
     View.OnClickListener listener;
     FragmentManager manager;
-
+//주석
     public ReplyAdapter(Context context, ArrayList<ReplyVO> list) {
         this.context = context;
         this.list = list;
