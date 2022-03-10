@@ -120,11 +120,10 @@ public class ReplyAdapter extends RecyclerView.Adapter<ReplyAdapter.Viewholder> 
             holder.board_user_reply_writedate.setText(list.get(position).getReply_writedate() + "");
 
 
-
             if (list.get(position).getPicture_filepath() != null) {
                 Glide.with(context).load(list.get(position).getPicture_filepath()).into(board_user_reply_img_profile);
                 //Glide.with(context).load(list.get(position).getPicture_filepath()).into(board_user_reply_img_profile);
-            }else {
+            } else {
                 Glide.with(context).load(R.drawable.logo_tot).into(board_user_reply_img_profile);
             }
             /* ====================================================================== */
@@ -134,7 +133,7 @@ public class ReplyAdapter extends RecyclerView.Adapter<ReplyAdapter.Viewholder> 
                 public boolean onLongClick(View view) {
                     if (Logined.member_id.equals(list.get(position).getMember_id()) || Logined.member_grade.equals("master")) {
                         showCustomDialog();
-                    }else{
+                    } else {
                         Toast.makeText(context, "권한없음", Toast.LENGTH_SHORT).show();
                     }
                     return false;
