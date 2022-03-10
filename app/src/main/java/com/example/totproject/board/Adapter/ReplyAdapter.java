@@ -66,7 +66,12 @@ public class ReplyAdapter extends RecyclerView.Adapter<ReplyAdapter.Viewholder> 
     @NonNull
     @Override
     public Viewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View itemView = inflater.inflate(R.layout.boardtab_frag_detail_item_reply, parent, false);
+        View itemView;
+        if (list.size() > 0) {
+            itemView = inflater.inflate(R.layout.boardtab_frag_detail_item_reply, parent, false);
+        } else {
+            itemView = inflater.inflate(R.layout.empty_item, parent, false);
+        }
         //1. ViewHolder holder = new ViewHolder(itemview);
         // return holder;
         return new Viewholder(itemView);
@@ -75,12 +80,18 @@ public class ReplyAdapter extends RecyclerView.Adapter<ReplyAdapter.Viewholder> 
     //4. 아이템이 ↑ 세팅되고 나서의 처리를 의미함↓
     @Override
     public void onBindViewHolder(@NonNull Viewholder holder, int position) {
-        holder.bind(holder, position, manager);
+        if (list.size() > 0) {
+            holder.bind(holder, position, manager);
+        }
     }//onBindViewHolder
 
     //5.↓ 총 아이템의 갯수를 지정함.
     @Override
     public int getItemCount() {
+        if(list.size() == 0){
+            return 1;
+        }
+
         return list.size();
     }//getItemCount
 
