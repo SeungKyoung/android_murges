@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="up_1state">65dp</dimen>
+    <dimen name="up_2state">115dp</dimen>
+    <dimen name="up_3state">165dp</dimen>
+</resources>

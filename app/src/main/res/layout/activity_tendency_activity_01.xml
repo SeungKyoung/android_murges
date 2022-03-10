@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.TendencyActivity01"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="♣ 성향분석"
+            android:layout_marginLeft="150dp"
+            android:layout_gravity="bottom"
+            android:textSize="22dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="(1.매우좋음, 2.좋음, 3.보통, 4.싫음, 5.매우싫음)"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="5dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="관광 "
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <RadioGroup
+            android:id="@+id/mbti_tour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/mbti_tour_rad1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="1"
+                android:layout_marginRight="5dp"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:id="@+id/mbti_tour_rad2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="2"
+                android:layout_marginRight="5dp"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:id="@+id/mbti_tour_rad3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="3"
+                android:layout_marginRight="5dp"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:id="@+id/mbti_tour_rad4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="4"
+                android:layout_marginRight="5dp"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:id="@+id/mbti_tour_rad5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="5"
+                android:padding="15dp"/>
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="액티비티 참여여부"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <RadioGroup
+            android:id="@+id/mbti_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/mbti_activity_rad1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="1"
+                android:layout_marginRight="5dp"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:id="@+id/mbti_activity_rad2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="2"
+                android:layout_marginRight="5dp"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:id="@+id/mbti_activity_rad3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="3"
+                android:layout_marginRight="5dp"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:id="@+id/mbti_activity_rad4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="4"
+                android:layout_marginRight="5dp"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:id="@+id/mbti_activity_rad5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="5"
+                android:padding="15dp"/>
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="축제 참여 여부"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <RadioGroup
+            android:id="@+id/mbti_festival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/mbti_festival_rad1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="1"
+                android:layout_marginRight="5dp"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:id="@+id/mbti_festival_rad2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="2"
+                android:layout_marginRight="5dp"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:id="@+id/mbti_festival_rad3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="3"
+                android:layout_marginRight="5dp"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:id="@+id/mbti_festival_rad4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="4"
+                android:layout_marginRight="5dp"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:id="@+id/mbti_festival_rad5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="5"
+                android:padding="15dp"/>
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="1인 여행 선호 여부"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <RadioGroup
+            android:id="@+id/mbti_solo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/mbti_solo_rad1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="1"
+                android:layout_marginRight="5dp"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:id="@+id/mbti_solo_rad2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="2"
+                android:layout_marginRight="5dp"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:id="@+id/mbti_solo_rad3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="3"
+                android:layout_marginRight="5dp"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:id="@+id/mbti_solo_rad4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="4"
+                android:layout_marginRight="5dp"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:id="@+id/mbti_solo_rad5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="5"
+                android:padding="15dp"/>
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="커플여행 선호 여부"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <RadioGroup
+            android:id="@+id/mbti_couple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/mbti_couple_rad1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="1"
+                android:layout_marginRight="5dp"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:id="@+id/mbti_couple_rad2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="2"
+                android:layout_marginRight="5dp"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:id="@+id/mbti_couple_rad3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="3"
+                android:layout_marginRight="5dp"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:id="@+id/mbti_couple_rad4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="4"
+                android:layout_marginRight="5dp"
+                android:padding="15dp"/>
+
+            <RadioButton
+                android:id="@+id/mbti_couple_rad5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_radio_button"
+                android:textColor="@drawable/selector_radio_text"
+                android:button="@null"
+                android:text="5"
+                android:padding="15dp"/>
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+        <Button
+            android:id="@+id/tend_btn_skip"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="건너뛰기"
+            android:backgroundTint="#DCCCCC"
+            android:textSize="20dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <Button
+            android:id="@+id/tend_btn_next"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="다음으로"
+            android:backgroundTint="#DCCCCC"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

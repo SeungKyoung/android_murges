@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".party.PartyJoinActivity"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/bottom_line"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:id="@+id/lin_party_back"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/less_than"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_partyjoin_name"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="파티 이름 1번"
+                        android:textSize="20dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgv_partyjoin_partyimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/logo_tot_old"
+                    android:scaleType="fitXY"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_partyjoin_name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/top_radius"
+                    android:backgroundTint="#2ba0da"
+                    android:layout_marginHorizontal="20dp"
+                    android:gravity="center"
+                    android:layout_marginTop="250dp"
+                    android:text="파티 이름입니다."
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_partyjoin_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="300dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="파티 설명입니다."
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:background="@drawable/bottom_radius"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/tv_partyjoin_hashtag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="#해쉬태그1"
+                    android:textColor="#2ba0da"
+                    android:textSize="22dp"/>
+                <TextView
+                    android:id="@+id/tv_partyjoin_hashtag2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="#해쉬태그2"
+                    android:textColor="#2ba0da"
+                    android:textSize="22dp"/>
+                <TextView
+                    android:id="@+id/tv_partyjoin_hashtag3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="#해쉬태그3"
+                    android:textColor="#2ba0da"
+                    android:textSize="22dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_partyjoin_cntmember"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="가입된 파티 멤버(5)"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/both_line"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp">
+                <GridView
+                    android:id="@+id/grid_memberlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="20dp"
+                    android:numColumns="2"
+                    android:horizontalSpacing="8dp"
+                    android:verticalSpacing="8dp"
+                    android:nestedScrollingEnabled="false"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+<!--        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton-->
+<!--            android:id="@+id/fab_partyjoin"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="end|bottom"-->
+<!--            android:text="Join Now  => "-->
+<!--            android:textColor="@color/white"-->
+<!--            android:gravity="center"-->
+<!--            app:fabSize="normal"-->
+<!--            android:background="@drawable/radius"-->
+<!--            android:backgroundTint="#2ba0da"-->
+<!--            android:layout_marginHorizontal="20dp"-->
+<!--            android:layout_marginVertical="40dp"-->
+<!--            />-->
+
+
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout>

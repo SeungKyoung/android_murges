@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "873585232921",
+    "project_id": "totchat-ec4e5",
+    "storage_bucket": "totchat-ec4e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873585232921:android:7990b1225fbb86fd2d2e88",
+        "android_client_info": {
+          "package_name": "com.example.totproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873585232921-092tpr228gc4slol7iffrm27hbg36rdm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2b2P0t2IVvVHklApSxF44tZlsGFsfcoU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873585232921-092tpr228gc4slol7iffrm27hbg36rdm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:background="@drawable/radius">
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/left_radius"
+            android:backgroundTint="#BDEDFF"
+            android:layout_margin="1dp">
+
+            <ImageView
+                android:id="@+id/imgv_member_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_launcher_foreground"
+                android:background="@drawable/radius"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/tv_member_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="사용자1"
+                android:textAlignment="center"
+                />
+
+            <CheckBox
+                android:id="@+id/chk_member_invite"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:visibility="gone"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

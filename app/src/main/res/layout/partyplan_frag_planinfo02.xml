@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".party_plan.PlanInfo02Fragment"
+    android:orientation="vertical">
+
+    <!--  플래닝 보여주는 화면  -->
+    <ExpandableListView
+        android:id="@+id/expdListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:groupIndicator="@null">
+    </ExpandableListView>
+
+
+
+
+</LinearLayout>

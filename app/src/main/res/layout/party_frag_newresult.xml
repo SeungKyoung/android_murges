@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".party.PartyCreateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="파티 생성 완료"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="★" />
+    </LinearLayout>
+    <!---->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="75"
+        android:orientation="vertical"
+        android:weightSum="75">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="#000000" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="30"
+            android:src="@drawable/ic_launcher_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="45"
+            android:orientation="vertical"
+            android:weightSum="7">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginVertical="20dp"
+                android:layout_weight="2"
+                android:background="#999999"
+                android:gravity="center"
+                android:text="환영 합니다 !" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginVertical="10dp"
+                android:layout_weight="1"
+                android:background="#999999"
+                android:gravity="center"
+                android:text="member_name 님!" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginVertical="10dp"
+                android:layout_weight="1"
+                android:background="#999999"
+                android:gravity="center"
+                android:text="신규 파티가 생성되었습니다." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginVertical="10dp"
+                android:layout_weight="3"
+                android:background="#999999"
+                android:gravity="center"
+                android:text="파티와 함께 더욱 다양하고 \n 즐거운 여행을 즐겨보세요." />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!---->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="10dp"
+        android:layout_weight="15"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:text="내 파티 바로가기" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:id="@+id/lin_membermanage_click"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:background="@drawable/left_radius"
+            android:backgroundTint="@color/main_color"
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardBackgroundView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text">
+
+                <ImageView
+                    android:id="@+id/imgv_member_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/radius"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/logo_tot_old" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_member_nick"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="유저이름"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:background="@color/main_color"/>
+
+                <TextView
+                    android:id="@+id/tv_member_grade"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="파티원"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/right_radius"
+                    android:backgroundTint="@color/main_color"/>
+                <LinearLayout
+                    android:id="@+id/lin_chk_box"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:paddingLeft="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/right_radius"
+                    android:backgroundTint="#FFDFD6"
+                    android:visibility="gone"
+                    >
+                    <CheckBox
+                        android:id="@+id/chk_member_delete"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

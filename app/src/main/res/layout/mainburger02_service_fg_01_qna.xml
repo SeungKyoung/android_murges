@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mainburgeractivity.MainBurger02ServiceFg">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mainburger02_service_fg_01_qna"
+        tools:listitem="@layout/mainburger02_service_fg_01_qna_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+</LinearLayout>

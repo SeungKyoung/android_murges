@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/manualnav_left"
+        android:enabled="true"
+        android:title="　이용약관"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/manualnav_right"
+        android:enabled="true"
+        android:title="　정책"
+        app:showAsAction="ifRoom" />
+
+
+</menu>

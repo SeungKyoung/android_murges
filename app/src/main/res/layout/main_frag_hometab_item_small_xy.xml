@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/category_img_tour"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="8"
+            android:src="@drawable/ic_launcher_foreground"
+            app:civ_border_color="#999999"
+            app:civ_border_overlay="true"
+            app:civ_border_width="3dp" />-->
+        <ImageView
+            android:id="@+id/hometab_small_img"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="8"
+            android:src="@color/black" />
+
+        <TextView
+            android:id="@+id/hometab_small_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:text="여행지 이름" />
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/hometab_small_img_like"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_bell" />
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/hometab_small_tv_like"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/hometab_small_img_comment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_guild" />
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/hometab_small_tv_comment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="0" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/hometab_small_tv_score"
+        android:layout_marginTop="7.5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="00"
+        android:layout_marginLeft="40dp"
+        android:textSize="30dp"
+
+        />
+
+</FrameLayout>
+
+

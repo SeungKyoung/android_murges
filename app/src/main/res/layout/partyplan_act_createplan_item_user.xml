@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/radius"
+        android:text="차민환">
+    </TextView>
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/radius"
+        android:text="사람이름">
+    </TextView>
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".mainburgeractivity.MainBurger02ServiceFg">
+    //4411
+
+    <LinearLayout
+        android:id="@+id/main_burger_service_oneoneemail_ifhide01"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="이름"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/main_burger_service_oneoneemail_edt_name"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginVertical="15dp"
+                android:background="@drawable/radius" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="이메일"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/main_burger_service_oneoneemail_edt_email"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginVertical="15dp"
+                android:background="@drawable/radius" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="휴대전화"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/main_burger_service_oneoneemail_edt_tel"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginVertical="15dp"
+                android:background="@drawable/radius" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="제목"
+            android:textSize="20dp" />
+
+        <EditText
+
+            android:id="@+id/main_burger_service_oneoneemail_edt_title"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/radius" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="7.5dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="내용"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/main_burger_service_oneoneemail_edt_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="@drawable/radius" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_burger_service_oneoneemail_ifhide02"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="비밀번호"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/main_burger_service_oneoneemail_edt_password"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/radius" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/main_burger_service_oneoneemail_btn_cancel"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="40dp"
+            android:layout_weight="1"
+            android:text="취 소"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/main_burger_service_oneoneemail_btn_submit"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="40dp"
+            android:layout_weight="1"
+            android:text="문의하기"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

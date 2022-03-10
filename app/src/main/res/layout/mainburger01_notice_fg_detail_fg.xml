@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_foreground"
+    android:orientation="vertical"
+    tools:context=".mainburgeractivity.MainBurger01NoticeFgDetailFg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+
+            android:background="@drawable/radius"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/notice_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingTop="5dp"
+                android:text="공공지지사사항항 제제목목"
+                android:textSize="20dp" />
+
+            <TextView
+
+                android:id="@+id/notice_detail_writedate"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="등등록록일일자자"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/notice_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/radius"
+        android:text="공공지지내내요용\n.\n.\n.\n.\n.\n.\n.\n." />
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainburgeractivity.MainBurger01NoticeFg">
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_gravity="center_horizontal"
+       android:layout_width="wrap_content"
+       android:id="@+id/notice_list"
+tools:listitem="@layout/mainburger01_notice_fg_item"
+       android:layout_height="wrap_content">
+
+   </androidx.recyclerview.widget.RecyclerView>
+
+</FrameLayout>

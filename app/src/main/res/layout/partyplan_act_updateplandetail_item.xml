@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_longclick"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:background="@drawable/bottom_line">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/edt_partyplan_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09:10"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edt_partyplan_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="몽마르뜨 언덕"/>
+
+            </LinearLayout>
+
+
+
+
+            <Button
+                android:id="@+id/btn_plandetail_update"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:text="수정"
+                android:background="@drawable/radius" />
+
+            <CheckBox
+                android:id="@+id/chk_planudelete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:visibility="gone"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text=" - "/>
+
+            <EditText
+                android:id="@+id/edt_partyplan_content_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="유저의 메모, 유저의 메모"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

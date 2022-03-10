@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/partyinfo_burger_home"
+        android:enabled="true"
+        android:title="파티 홈"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/partyinfo_burger_plan"
+        android:enabled="true"
+        android:title="파티 계획"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/partyinfo_burger_myparty_list"
+        android:enabled="true"
+        android:title="내 파티 목록"
+        app:showAsAction="ifRoom" />
+</menu>
+
+

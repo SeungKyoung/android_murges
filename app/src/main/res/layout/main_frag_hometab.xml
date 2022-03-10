@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".main.Fragment01HomeTab"
+    android:background="#F1F1F1">
+
+   <!-- <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/swipe_layout"
+        >-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/main_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:background="#FFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/haenamfont"
+                    android:drawableRight="@drawable/ic_baseline_assistant_24"
+                    android:text="추천 여행지"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="18dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginBottom="30dp"
+                    android:id="@+id/maintab_rv_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/main_where"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_recommend"
+                android:background="#FFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/haenamfont"
+                    android:text="가까운 거리 여행지"
+                    android:drawableRight="@drawable/ic_baseline_my_location_24"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="18dp" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:layout_marginBottom="30dp"
+                    android:id="@+id/maintab_rv_where"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:paddingStart="40dp"
+                    android:paddingEnd="40dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/main_local"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_where"
+                android:background="#FFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/haenamfont"
+                    android:drawableRight="@drawable/ic_baseline_auto_awesome"
+                    android:text="지역 축제 정보"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="18dp" />
+
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/pager_local"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/tour"
+                android:background="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/haenamfont"
+                    android:layout_margin="20dp"
+                    android:drawableRight="@drawable/ic_baseline_airline_stops_24"
+                    android:text="가고싶은 여행지를 고르세요."
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="18dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginBottom="30dp"
+                    android:id="@+id/maintab_rv_tour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+ <!--   </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+-->
+
+</FrameLayout>

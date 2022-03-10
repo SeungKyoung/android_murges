@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mainburgeractivity.MainBurger03ManualFg">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+        android:id="@+id/nav_manualnav"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:itemIconTint="@drawable/nav_select"
+        app:itemTextColor="@drawable/nav_select"
+        app:menu="@menu/nav_manual" />
+
+    <TextView
+        android:id="@+id/manual_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center_vertical"
+        android:text="trip or travel 이용약관 VS trip or travel 정책" />
+
+    <TextView
+        android:id="@+id/manual_tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/radius"
+        android:padding="5dp"
+        android:text="차민환\n차민차민환환\n차차민환차민환민환\n차차민환차민환차민환민환\n차차민환차민환차민환차민환민환\n차차민환차민환차민환차민환차민환민환" />
+
+</LinearLayout>

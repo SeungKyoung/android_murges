@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:weightSum="100"    
+    >
+
+    <LinearLayout
+        android:id="@+id/lin_party_click"
+        android:layout_width="380dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/radius">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="@drawable/left_radius"
+            android:backgroundTint="#FFDFD6"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardBackgroundView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text">
+                <ImageView
+                    android:id="@+id/imgv_party"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/radius"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/logo_tot_old" />
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+        
+    
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="60"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="@drawable/right_radius"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_party_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공개된 파티1 (파티이름)"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/tv_party_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="파티설명입니다. \n파티설명은 최대 세줄입니다 "
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_party_tag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#소개 태그1"
+                    android:textStyle="bold"
+                    android:textColor="#809fff"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/tv_party_tag2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#소개 태그2"
+                    android:textStyle="bold"
+                    android:textColor="#809fff"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/tv_party_tag3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#소개 태그3"
+                    android:textStyle="bold"
+                    android:textColor="#809fff"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
+            
+            
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

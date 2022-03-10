@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    tools:context=".party.UpdateMyPartyActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="horizontal"
+                android:background="@drawable/bottom_line">
+
+                <LinearLayout
+                    android:id="@+id/lin_party_back"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/less_than"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_party_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="파티 이름"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/logo_tot_old"
+                android:scaleType="fitXY"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFDFD6"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:background="#FFDFD6"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/top_radius"
+                        android:backgroundTint="#2ba0da">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="파티 설명 "
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edt_party_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:background="@drawable/detail_radius"
+                        android:backgroundTint="#FFF"
+                        android:textAlignment="center"
+                        android:hint="간단한 파티소개를 입력해주세요" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/top_radius"
+                        android:backgroundTint="#2ba0da">
+                        <CheckBox
+                            android:id="@+id/checkbox_party_private"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:text="파티 공개여부 ( 공개 / 비공개 )" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_temp_checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/bottom_radius"
+                        android:layout_marginHorizontal="40dp"
+                        android:orientation="horizontal">
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lin_display_tags"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/radius_clean"
+                        android:layout_marginHorizontal="20dp"
+                        android:backgroundTint="@color/white"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="20dp">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="9"
+                                android:layout_height="wrap_content">
+                                <EditText
+                                    android:id="@+id/edt_party_tag"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:hint="해시태그로 파티를 소개해보세요"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1.5"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/radius"
+                                >
+
+                                <Button
+                                    android:id="@+id/btn_party_tag"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="10dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/plus_btn"
+                                    android:backgroundTint="#2ba0da"/>
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_weight="67"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_party_tag1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="20dp"
+                                android:textColor="#2ba0da"
+                                />
+                            <TextView
+                                android:id="@+id/tv_party_tag2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="20dp"
+                                android:textColor="#2ba0da"
+                                />
+                            <TextView
+                                android:id="@+id/tv_party_tag3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="20dp"
+                                android:textColor="#2ba0da"
+                                />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="left"
+                        android:background="@drawable/top_radius"
+                        android:backgroundTint="#2ba0da">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="파티 대표 사진"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/detail_radius"
+                        android:backgroundTint="#fff">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:orientation="horizontal"
+                            android:background="@drawable/radius"
+                            android:layout_margin="20dp">
+
+                            <ImageView
+                                android:id="@+id/imgv_party_pic"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/logo_tot_old" />
+
+                            <TextView
+                                android:id="@+id/tv_party_pic"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:layout_margin="10dp"
+                                android:gravity="center_vertical"
+                                android:text="TripOrTravel.png" />
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="40dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/radius"
+                                android:layout_gravity="center"
+                                >
+
+                                <Button
+                                    android:id="@+id/btn_create_party_add"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="10dp"
+                                    android:background="@drawable/plus_btn"
+                                    android:backgroundTint="#2ba0da"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text=" 파티를 대표할 사진을 추가하여 보세요"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginBottom="20dp"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_party_update"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="100dp"
+                    android:background="@drawable/radius_color"
+                    android:backgroundTint="#2ba0da"
+                    android:text="파티 정보 수정"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    />
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

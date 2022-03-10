@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:icon="@drawable/ic_baseline_noti"
+        android:id="@+id/mainnav_notice"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:title="　공지사항" />
+    <item
+        android:icon="@drawable/ic_baseline_report_24"
+        android:id="@+id/mainnav_customer"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:title="　고객센터" />
+    <item
+        android:icon="@drawable/ic_baseline_checklist_rtl_24"
+        android:id="@+id/mainnav_policy"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:title="　이용약관 및 정책" />
+    <item
+        android:icon="@drawable/ic_baseline_info_24"
+        android:id="@+id/mainnav_version"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:title="　버전정보" />
+
+
+</menu>
